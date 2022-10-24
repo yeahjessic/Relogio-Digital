@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url(./assets/bebas_neue/BebasNeue-Regular.otf);
+}
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  font-family: "BebasNeue", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(289.9, 87%, 47%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+}
+/*sessão do relógio*/
+.clock {
+  margin-top: 40vh;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  align-items: center;
+  width: 80vh;
+  height: 20vh;
+  backdrop-filter: blur(15px) saturate(108%);
+  -webkit-backdrop-filter: blur(15px) saturate(108%);
+  background-color: rgba(0, 0, 0, 0.22);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.clock div {
+  flex-direction: column;
+  height: 150px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+}
+span {
+  font-size: 90px;
+  font-weight: bold;
+}
+.time {
+  font-size: 25px;
+}
